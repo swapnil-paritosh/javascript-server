@@ -23,50 +23,7 @@ Flexible Document Model – MongoDB supports document-model(tables, schemas, col
 
 # 2. Express: Back-End Framework:
 Express is a Node.js framework. Rather than writing the code using Node.js and creating loads of Node modules, Express makes it simpler and easier to write the back-end code. Express helps in designing great web applications and APIs. Express supports many middlewares which makes the code shorter and easier to write.
-Why use Express?
 
-Asynchronous and Single-threaded.
-Effecient, fast & scalable
-Has the biggest community for Node.js
-Express promotes code reusability with its built-in router.
-Robust API
-Example: Fololow the below steps:
-
-Create a new folder to start your express project and type below command in the command prompt to initialize a package.json file. Accept the default settings and continue.
-npm init
-Then install express by typing the below command and hit enter. Now finally create a file inside the directory named index.js.
-npm install express --save
-
-
-Now type in the following in index.js to create a sample server.
-filter_none
-brightness_4
-const express = require('express'), 
-http = require('http'); 
-  
-const hostname = 'localhost'; 
-const port = 8080; 
-const app = express(); 
-  
-app.use((req, res) => { 
-  console.log(req.headers); 
-  res.statusCode = 200; 
-  res.setHeader('Content-Type', 'text/html'); 
-  res.end('<html><body><h1>This is a test server</h1></body></html>'); 
-  
-}); 
-const sample_server = http.createServer(app); 
-  
-sample_server.listen(port, hostname, () => { 
-  console.log(`Server running at http://${hostname}:${port}/`); 
-}); 
-Update the “scripts” section in package.json file
-
-Then to start the server by running the below command
-npm start
-
-
-Now you can open the broswer and get the output of the running server.
 
 # 3. React: Front-End Framework
 React is a JavaScript library that is used for building user interfaces. React is used for the development of single-page applications and mobile applications because of its ability to handle rapidly changing data. React allows users to code in JavasScript and create UI components.
@@ -77,22 +34,14 @@ JSX – Stands for JavaScript XML. It is an HTML/XML JavaScript Extension which 
 Components – ReactJS supports Components. Components are the building blocks of UI wherein each component has a logic and contributes to the overall UI. These components also promote code reusability and make the overall web application easier to understand.
 High Performance – Features like Virtual DOM, JSX and Components makes it much faster than the rest of the frameworks out there.
 Developing Android/Ios Apps – With React Native you can easily code Android-based or IOS-Based apps with just the knowledge of JavaScript and ReactJS.
-You can start your react application by first installing “create-react-app” using npm or yarn.
-npm install create-react-app --global
-OR
-yarn global add create-react-app
-After that you can create a new react app by using.
-create-react-app app_name
-Then navigate into the “app_name” folder and type yarn start or npm start to start your application.
 
 
 # 4. Node.js: JS Runtime Environment
 Node.js provides a JavaScript Environment which allows the user to run their code on the server (outside the browser). Node pack manager i.e. npm allows the user to choose from thousands of free packages (node modules) to download.
-Why use Node.JS?
+**Why use Node.JS?**
 
 Open source JavaScript Runtime Environemnt
 Single threading – Follows a single threaded model.
 Data Streaming
 Fast – Built on Google Chrome’s JavaScript Engine, Node.js has a fast code execution.
 Highly Scalable
-Initialize a Node.js application by typing runing the below command in the command window. Accept the standard settings.
