@@ -1,5 +1,5 @@
-let num =process.argv[2];
-function diamond(n)
+//let num =process.argv[2];
+function equilateral(n)
 {
     if(n<11 && n>1)
     {
@@ -27,4 +27,4 @@ function diamond(n)
     }
 }
 
-diamond(num);
+export default equilateral;
