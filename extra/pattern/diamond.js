@@ -1,4 +1,4 @@
-let num =process.argv[2];
+
 function diamond(n)
 {
     if(n<11 && n>1)
@@ -42,5 +42,4 @@ function diamond(n)
         process.stdout.write("Enter value between 2 to 10")
     }
 }
-
-diamond(num);
+export default diamond;
