@@ -1,14 +1,14 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.permission = {
+export const permission =
+{
     'getUsers': {
         all: ['head-trainer'],
         read: ['trainee', 'trainer'],
         write: ['trainer'],
         delete: [],
     }
-};
-exports.users = [
+}
+
+export let users = [
     {
         traineeEmail: 'trainee1@successive.tech',
         reviewerEmail: 'reviewer1@successive.tech',
@@ -21,5 +21,4 @@ exports.users = [
         traineeEmail: 'shiva@success.tech',
         reviewerEmail: 'vikas@successive.tech',
     }
-];
-//# sourceMappingURL=constants.js.map
+]
