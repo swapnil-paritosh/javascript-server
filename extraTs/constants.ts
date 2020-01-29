@@ -1,5 +1,4 @@
-export const permission =
-{
+export let permission: Ipermission = {
     'getUsers': {
         all: ['head-trainer'],
         read: ['trainee', 'trainer'],
@@ -8,17 +7,17 @@ export const permission =
     }
 }
 
-export let users = [
+export let users: Array<Iusers> = [
     {
         traineeEmail: 'trainee1@successive.tech',
         reviewerEmail: 'reviewer1@successive.tech',
     },
     {
-        traineeEmail: 'swapnil@successive.tech',
+        traineeEmail: 'shiva@successive.tech',
         reviewerEmail: 'vikas@successive.tech',
     },
     {
-        traineeEmail: 'shiva@success.tech',
-        reviewerEmail: 'vikas@successive.tech',
+        traineeEmail: 'swapnil@succesive.tech',
+        reviewerEmail: 'vikas@successiv.tech',
     }
 ]
