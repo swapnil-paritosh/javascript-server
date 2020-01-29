@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@babel/plugin-transform-modules-commonjs": "^7.8.3",
-    "@types/node": "^13.5.0",
     "D": "^1.0.0"
   },
+<<<<<<< HEAD
   "devDependencies": {
     "@babel/core": "^7.8.3",
     "@babel/node": "^7.8.3",
@@ -19,33 +18,22 @@
     "tslint": "^6.0.0",
     "typescript": "^3.7.5"
   },
+=======
+
+  "devDependencies": {},
+>>>>>>> 6613e00356b8f683e555ab47e4a520ae5ef23a80
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:extra": "babel-node extra",
-    "start:extraTs": "tsc-watch --project . --onSuccess \"npm run nodemon\"",
-    "nodemon": "nodemon ./dist/index.js",
-    "lint": "./node_modules/tslint/bin/tslint -c tslint.json -p tsconfig.json --exclude 'node_modules/**/*.{j,t}s'",
-    "lint:fix": "npm run lint --fix"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint && npm test",
-      "pre-push": "npm run lint && npm test"
-    }
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/swapnil-paritosh/javascript-server.git"
   },
+  "type":"module",
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/swapnil-paritosh/javascript-server/issues"
   },
-  "homepage": "https://github.com/swapnil-paritosh/javascript-server#readme",
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  }
+  "homepage": "https://github.com/swapnil-paritosh/javascript-server#readme"
 }
