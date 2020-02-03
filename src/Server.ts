@@ -4,6 +4,7 @@ import * as bodyParser from 'body-parser';
 import errorHandler from './libs/routes/errorHandler';
 import notFoundRoutes from './libs/routes/notFoundRoute';
 import { Request } from 'express';
+import routes from './controllers/trainee/routes';
 
 class Server {
     private app: express.Express;
@@ -50,11 +51,12 @@ class Server {
             res.send('I am OK');
         });
 
-        app.use('/api', (req, res, next) => {
+        app.use('/middleware', (req, res, next) => {
             console.log('Inside Middleware');
             console.log(req.body);
             res.send(req.body);
         });
+        app.use('/api', routes);
 
         app.use(notFoundRoutes);
         app.use(errorHandler);
