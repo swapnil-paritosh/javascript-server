@@ -1,13 +1,13 @@
-export let permission: Ipermission = {
+export default {
     'getUsers': {
-        all: ['head-trainer'],
-        read: ['trainee', 'trainer'],
-        write: ['trainer'],
+        read: ['trainee', 'trainer', 'head-trainer'],
+        write: ['trainer', 'head-trainer'],
         delete: [],
-    }
+    },
+    
 }
 
-export let users: Array<Iusers> = [
+export let users:[
     {
         traineeEmail: 'trainee1@successive.tech',
         reviewerEmail: 'reviewer1@successive.tech',
