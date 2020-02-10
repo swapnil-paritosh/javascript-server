@@ -1,5 +1,5 @@
 import * as mongoose from 'mongoose'
-
+import seedData from './seedData';
 export default class Database {
     static open = (mongoUri: string) => {
         return new Promise ((resolve,reject)=> {
@@ -9,6 +9,7 @@ export default class Database {
                 reject(err);
             }
             resolve();
+            seedData();
             console.log('DB Connected Successfully');
         })
         .catch(error => (console.log(error)));
@@ -16,8 +17,9 @@ export default class Database {
     }
 
     static disconnect = () => {
-        console.log('Mongoose is Disconnected');
         mongoose.connection.close();
+        console.log('Mongoose is Disconnected');
+
 
     }
 }
