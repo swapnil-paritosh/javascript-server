@@ -23,7 +23,7 @@ export default function (config) {
         const arrayError = [];
 
         const configKeys = Object.keys(config);
-        console.log(configKeys);
+        console.log("configKeys are:- ",configKeys);
 
         console.log(req.method);
 
